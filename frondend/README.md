@@ -1,12 +1,9 @@
-# React + Vite
+A mobile-friendly weather application built with React.js, Tailwind CSS, Node.js, axios that fetches weather data from the OpenWeatherMap API. The app displays the current weather, stores historical weather data in a database, and allows users to filter and view past weather data for selected locations.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tech Stack
 
-Currently, two official plugins are available:
+Frontend: React.js, Tailwind CSS, Axios, axios interceptors Backend: Node.js, express Database: MongoDB API: OpenWeatherMap API (Free API key required) State Management: useState Styling: Tailwind CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Repostry Pattern: The business logic is kept separate from the data access code, leading to better organization and easier maintenance. Weather Data: Fetch and display the current temperature, weather description, and a corresponding weather icon from the OpenWeatherMap API. Responsive UI: Clean, mobile-friendly interface designed with Tailwind CSS. Error Handling: Proper error handling for network requests and failed API calls. Location Filter: Filter and display weather data for historical locations: Delhi, Moscow, Paris, New York, Sydney, and Riyadh. Date Range Filter: Users can filter weather data by selecting a "From" and "To" date range. The date range is validated (max 30 days). Historical Data: View past weather data stored in a database, organized and presented in a table.
